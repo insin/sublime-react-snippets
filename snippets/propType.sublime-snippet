@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${1}: React.PropTypes.${2:string}
+]]></content>
+    <tabTrigger>pt</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: propType</description>
+</snippet>

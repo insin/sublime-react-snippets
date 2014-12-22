@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+childContextTypes: {
+	${1}: React.PropTypes.${2:string}
+},
+]]></content>
+    <tabTrigger>cct</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: childContextTypes: { ... }</description>
+</snippet>

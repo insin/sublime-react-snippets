@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+React.render(${1}, ${2:document.${3:getElementById('${4}')}})
+]]></content>
+    <tabTrigger>rr</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: React.render()}</description>
+</snippet>

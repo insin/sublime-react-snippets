@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+contextTypes: {
+	${1}: React.PropTypes.${2:string}
+},
+]]></content>
+    <tabTrigger>cts</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: contextTypes: { ... }</description>
+</snippet>

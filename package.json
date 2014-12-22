@@ -1,0 +1,17 @@
+{
+  "name": "sublime-react-snippets",
+  "version": "1.0.0",
+  "description": "Sublime Text snippets for writing React components",
+  "keywords": [
+    "sublime",
+    "react",
+    "snippets"
+  ],
+  "author": "Jonny Buchanan",
+  "license": "MIT",
+  "devDependencies": {
+    "glob": "^4.3.2",
+    "trim": "0.0.1",
+    "xml2js": "^0.4.4"
+  }
+}

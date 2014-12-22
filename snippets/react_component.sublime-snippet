@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+var ${1} = React.createClass({
+	render() {
+    return <div${2: className="${1}"}>
+      ${3}
+    </div>
+	}
+})
+]]></content>
+    <tabTrigger>rcc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: component</description>
+</snippet>

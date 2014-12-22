@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+render() {
+	return <div>
+    ${1}
+  </div>
+}
+]]></content>
+    <tabTrigger>ren</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: render() { ... }</description>
+</snippet>
