@@ -35,7 +35,7 @@ componentDidUpdate(prevProps, prevState) {
 #### class -- className
 
 ```javascript
-className=
+className=${2:"${1}"}
 ```
 
 #### cs -- var cx = React.addons.classSet
