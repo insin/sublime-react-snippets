@@ -6,9 +6,9 @@ var React = require('react')
 
 var ${1} = React.createClass({
 	render() {
-		return <div${2: className="${1}"}>
-      ${3}
-		</div>
+		return <${3:div}${2: className="${1}"}>
+      ${4}
+		</${3:div}>
 	}
 })
 
