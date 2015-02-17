@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-dangerouslySetInnerHTML={${3:{__html: ${2:'${1}'}}}
+dangerouslySetInnerHTML={${3:{__html: ${2:'${1}'}}}}
 ]]></content>
     <tabTrigger>dsi</tabTrigger>
     <scope>source.js</scope>
