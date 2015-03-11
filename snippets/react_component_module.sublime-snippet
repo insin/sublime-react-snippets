@@ -4,15 +4,15 @@
 
 var React = require('react')
 
-var ${1} = React.createClass({
+var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
 	render() {
-		return <${3:div}${2: className="${1}"}>
+		return <${3:div}${2: className="${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}"}>
       ${4}
 		</${3:div}>
 	}
 })
 
-module.exports = ${1}
+module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
 ]]></content>
     <tabTrigger>rcm</tabTrigger>
     <scope>source.js</scope>
