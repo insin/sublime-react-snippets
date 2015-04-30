@@ -38,12 +38,6 @@ componentDidUpdate(prevProps, prevState) {
 className=${2:"${1}"}
 ```
 
-#### cs -- var cx = React.addons.classSet
-
-```javascript
-var cx = React.addons.classSet
-```
-
 #### cts -- contextTypes: { ... }
 
 ```javascript
@@ -84,13 +78,7 @@ componentWillUnmount() {
 },
 ```
 
-#### cx -- cx({ ... })
 
-```javascript
-cx({
-  $1: $2
-})
-```
 
 #### dsi -- dangerouslySetInnerHTML
 
