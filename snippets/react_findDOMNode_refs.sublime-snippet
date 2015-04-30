@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-var ${1} = this.refs.${1}.getDOMNode()
+React.findDOMNode(this.refs.${1})
 ]]></content>
     <tabTrigger>rdn</tabTrigger>
     <scope>source.js</scope>
-    <description>React: var = this.refs.getDOMNode()</description>
+    <description>React: React.findDOMNode(this.refs.)</description>
 </snippet>

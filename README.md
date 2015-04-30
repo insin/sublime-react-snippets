@@ -78,12 +78,16 @@ componentWillUnmount() {
 },
 ```
 
-
-
 #### dsi -- dangerouslySetInnerHTML
 
 ```javascript
-dangerouslySetInnerHTML={${3:{__html: ${2:'${1}'}}}
+dangerouslySetInnerHTML={${3:{__html: ${2:'${1}'}}}}
+```
+
+#### fdn -- React.findDOMNode(...)
+
+```javascript
+React.findDOMNode(${1})
 ```
 
 #### fup -- forceUpdate(...)
@@ -100,12 +104,6 @@ getChildContext() {
     ${1}: ${2}
   }
 },
-```
-
-#### gdn -- getDOMNode()
-
-```javascript
-getDOMNode()
 ```
 
 #### gdp -- getDefaultProps() { ... }
@@ -184,10 +182,10 @@ var ${1} = React.createClass({
 module.exports = ${1}
 ```
 
-#### rdn -- var = this.refs.getDOMNode()
+#### rdn -- React.findDOMNode(this.refs.)
 
 ```javascript
-var ${1} = this.refs.${1}.getDOMNode()
+React.findDOMNode(this.refs.${1})
 ```
 
 #### ren -- render() { ... }
