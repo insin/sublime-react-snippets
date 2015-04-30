@@ -1,6 +1,6 @@
 <snippet>
-<content><![CDATA[className=${2:"${1}"}]]></content>
-<tabTrigger>class</tabTrigger>
-<scope>source.js</scope>
-<description>className</description>
+	<content><![CDATA[className=${2:"${1}"}]]></content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.js</scope>
+	<description>React: className</description>
 </snippet>

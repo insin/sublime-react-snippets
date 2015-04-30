@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-React.render(${1}, ${2:document.${3:getElementById('${4}')}})
+React.render(${1}, ${2:document.${3:querySelector('${4}')}})
 ]]></content>
     <tabTrigger>rr</tabTrigger>
     <scope>source.js</scope>

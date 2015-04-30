@@ -93,7 +93,7 @@ React.findDOMNode(${1})
 #### fup -- forceUpdate(...)
 
 ```javascript
-this.forceUpdate(${1:callback})
+this.forceUpdate(${1})
 ```
 
 #### gcc -- getChildContext() { ... }
@@ -157,9 +157,9 @@ propTypes: {
 ```javascript
 var ${1} = React.createClass({
   render() {
-    return <div${2: className="${1}"}>
-      ${3}
-    </div>
+    return <${3:div}${2: className="${1}"}>
+      ${4}
+    </${3:div}>
   }
 })
 ```
@@ -171,15 +171,15 @@ var ${1} = React.createClass({
 
 var React = require('react')
 
-var ${1} = React.createClass({
+var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
   render() {
-    return <div${2: className="${1}"}>
-      ${3}
-    </div>
+    return <${3:div}${2: className="${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}"}>
+      ${4}
+    </${3:div}>
   }
 })
 
-module.exports = ${1}
+module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
 ```
 
 #### rdn -- React.findDOMNode(this.refs.)
@@ -201,7 +201,7 @@ render() {
 #### rr -- React.render()}
 
 ```javascript
-React.render(${1}, ${2:document.${3:getElementById('${4}')}})
+React.render(${1}, ${2:document.${3:querySelector('${4}')}})
 ```
 
 #### scu -- shouldComponentUpdate() { ... }
