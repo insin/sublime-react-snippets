@@ -1,7 +1,5 @@
 <snippet>
     <content><![CDATA[
-'use strict';
-
 var React = require('react')
 
 var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
