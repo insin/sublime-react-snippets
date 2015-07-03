@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-React.render(${1}, ${2:document.${3:querySelector('${4}')}})
+React.render(<${1}/>, ${3:document.querySelector('#${2:app}')})
 ]]></content>
     <tabTrigger>rr</tabTrigger>
     <scope>source.js</scope>
-    <description>React: React.render()}</description>
+    <description>React: React.render()</description>
 </snippet>
