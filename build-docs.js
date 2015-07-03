@@ -30,7 +30,7 @@ snippets.sort(function(a, b) {
 var docs = snippets.map(function(snippet) {
   return (
     '#### ' + snippet.tabTrigger +
-    ' -- ' + snippet.description.replace(/^React: /, '') + '\n\n' +
+    ' → ' + snippet.description.replace(/^React: /, '') + '\n\n' +
     '```javascript\n' +
     snippet.content +
     '\n```'

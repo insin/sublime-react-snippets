@@ -8,7 +8,7 @@ use ES6 concise method definitions and only use semicolons where necessary.
 
 ### Snippets
 
-#### cct -- childContextTypes: { ... }
+#### cct → childContextTypes: { ... }
 
 ```javascript
 childContextTypes: {
@@ -16,7 +16,7 @@ childContextTypes: {
 },
 ```
 
-#### cdm -- componentDidMount() { ... }
+#### cdm → componentDidMount() { ... }
 
 ```javascript
 componentDidMount() {
@@ -24,7 +24,7 @@ componentDidMount() {
 },
 ```
 
-#### cdup -- componentDidUpdate() { ... }
+#### cdup → componentDidUpdate() { ... }
 
 ```javascript
 componentDidUpdate(prevProps, prevState) {
@@ -32,13 +32,13 @@ componentDidUpdate(prevProps, prevState) {
 },
 ```
 
-#### class -- className
+#### class → className
 
 ```javascript
 className=${2:"${1}"}
 ```
 
-#### cts -- contextTypes: { ... }
+#### cts → contextTypes: { ... }
 
 ```javascript
 contextTypes: {
@@ -46,7 +46,7 @@ contextTypes: {
 },
 ```
 
-#### cwm -- componentWillMount() { ... }
+#### cwm → componentWillMount() { ... }
 
 ```javascript
 componentWillMount() {
@@ -54,7 +54,7 @@ componentWillMount() {
 },
 ```
 
-#### cwr -- componentWillReceiveProps() { ... }
+#### cwr → componentWillReceiveProps() { ... }
 
 ```javascript
 componentWillReceiveProps(nextProps) {
@@ -62,7 +62,7 @@ componentWillReceiveProps(nextProps) {
 },
 ```
 
-#### cwu -- componentWillUpdate() { ... }
+#### cwu → componentWillUpdate() { ... }
 
 ```javascript
 componentWillUpdate(nextProps, nextState) {
@@ -70,7 +70,7 @@ componentWillUpdate(nextProps, nextState) {
 },
 ```
 
-#### cwun -- componentWillUnmount() { ... }
+#### cwun → componentWillUnmount() { ... }
 
 ```javascript
 componentWillUnmount() {
@@ -78,25 +78,37 @@ componentWillUnmount() {
 },
 ```
 
-#### dsi -- dangerouslySetInnerHTML
+#### dp → var {...} = this.props
+
+```javascript
+var {${1}} = this.props
+```
+
+#### ds → var {...} = this.state
+
+```javascript
+var {${1}} = this.state
+```
+
+#### dsi → dangerouslySetInnerHTML
 
 ```javascript
 dangerouslySetInnerHTML={${3:{__html: ${2:'${1}'}}}}
 ```
 
-#### fdn -- React.findDOMNode(...)
+#### fdn → React.findDOMNode(...)
 
 ```javascript
 React.findDOMNode(${1})
 ```
 
-#### fup -- forceUpdate(...)
+#### fup → forceUpdate(...)
 
 ```javascript
 this.forceUpdate(${1})
 ```
 
-#### gcc -- getChildContext() { ... }
+#### gcc → getChildContext() { ... }
 
 ```javascript
 getChildContext() {
@@ -106,7 +118,7 @@ getChildContext() {
 },
 ```
 
-#### gdp -- getDefaultProps() { ... }
+#### gdp → getDefaultProps() { ... }
 
 ```javascript
 getDefaultProps() {
@@ -116,7 +128,7 @@ getDefaultProps() {
 },
 ```
 
-#### gis -- getInitialState() { ... }
+#### gis → getInitialState() { ... }
 
 ```javascript
 getInitialState() {
@@ -126,25 +138,25 @@ getInitialState() {
 },
 ```
 
-#### ism -- isMounted()
+#### ism → isMounted()
 
 ```javascript
 this.isMounted()
 ```
 
-#### props -- this.props.
+#### props → this.props.
 
 ```javascript
 this.props.${1}
 ```
 
-#### pt -- propType
+#### pt → propType
 
 ```javascript
 ${1}: React.PropTypes.${2:string}
 ```
 
-#### pts -- propTypes: { ... }
+#### pts → propTypes: { ... }
 
 ```javascript
 propTypes: {
@@ -152,7 +164,7 @@ propTypes: {
 },
 ```
 
-#### rcc -- component
+#### rcc → component
 
 ```javascript
 var ${1} = React.createClass({
@@ -164,11 +176,9 @@ var ${1} = React.createClass({
 })
 ```
 
-#### rcm -- component module
+#### rcm → component module
 
 ```javascript
-'use strict';
-
 var React = require('react')
 
 var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
@@ -182,13 +192,13 @@ var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
 module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
 ```
 
-#### rdn -- React.findDOMNode(this.refs.)
+#### rdn → React.findDOMNode(this.refs.)
 
 ```javascript
 React.findDOMNode(this.refs.${1})
 ```
 
-#### ren -- render() { ... }
+#### ren → render() { ... }
 
 ```javascript
 render() {
@@ -198,13 +208,22 @@ render() {
 }
 ```
 
-#### rr -- React.render()}
+#### rr → React.render()
 
 ```javascript
-React.render(${1}, ${2:document.${3:querySelector('${4}')}})
+React.render(<${1}/>, ${3:document.querySelector('#${2:app}')})
 ```
 
-#### scu -- shouldComponentUpdate() { ... }
+#### rrm → React.render() module
+
+```javascript
+var React = require('react')
+var ${1} = require('${2:./}${1}')
+
+React.render(<${1}${3}/>, ${5:document.querySelector('#${4:app}')})
+```
+
+#### scu → shouldComponentUpdate() { ... }
 
 ```javascript
 shouldComponentUpdate(nextProps, nextState) {
@@ -212,7 +231,7 @@ shouldComponentUpdate(nextProps, nextState) {
 },
 ```
 
-#### sst -- this.setState({ ... })
+#### sst → this.setState({ ... })
 
 ```javascript
 this.setState({
@@ -220,7 +239,7 @@ this.setState({
 })
 ```
 
-#### state -- this.state.
+#### state → this.state.
 
 ```javascript
 this.state.${1}
