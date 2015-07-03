@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+var {${1}} = this.props
+]]></content>
+    <tabTrigger>dp</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: var {...} = this.props</description>
+</snippet>
