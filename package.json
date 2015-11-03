@@ -10,12 +10,8 @@
   "author": "Jonny Buchanan",
   "license": "MIT",
   "devDependencies": {
-    "glob": "^4.3.2",
+    "glob": "^5.0.15",
     "trim": "0.0.1",
-    "xml2js": "^0.4.4"
-  },
-  "dependencies": {
-    "glob": "^5.0.13",
-    "xml2js": "^0.4.9"
+    "xml2js": "^0.4.15"
   }
 }

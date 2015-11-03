@@ -96,10 +96,10 @@ var {${1}} = this.state
 dangerouslySetInnerHTML={${3:{__html: ${2:'${1}'}}}}
 ```
 
-#### fdn → React.findDOMNode(...)
+#### fdn → findDOMNode(...)
 
 ```javascript
-React.findDOMNode(${1})
+ReactDOM.findDOMNode(${1})
 ```
 
 #### fup → forceUpdate(...)
@@ -176,6 +176,14 @@ var ${1} = React.createClass({
 })
 ```
 
+#### rcf → component function
+
+```javascript
+var ${1} = ({${2}}) => <${4:div}${3: className="${1}"}>
+  ${5}
+</${4:div}>
+```
+
 #### rcm → component module
 
 ```javascript
@@ -192,10 +200,33 @@ var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
 module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
 ```
 
-#### rdn → React.findDOMNode(this.refs.)
+#### rdn → findDOMNode(this.refs.)
 
 ```javascript
-React.findDOMNode(this.refs.${1})
+ReactDOM.findDOMNode(this.refs.${1})
+```
+
+#### rdr → ReactDOM.render()
+
+```javascript
+ReactDOM.render(<${1}/>, ${3:document.querySelector('#${2:app}')})
+```
+
+#### rdr → React.cloneElement(...)
+
+```javascript
+React.cloneElement(${1:this.props.children}, {${2}})
+```
+
+#### rdrm → ReactDOM.render() module
+
+```javascript
+var React = require('react')
+var ReactDOM = require('react-dom')
+
+var ${1} = require('${2:./}${1}')
+
+ReactDOM.render(<${1}${3}/>, ${5:document.querySelector('${4:#app}')})
 ```
 
 #### ren → render() { ... }
@@ -206,21 +237,6 @@ render() {
     ${1}
   </div>
 }
-```
-
-#### rr → React.render()
-
-```javascript
-React.render(<${1}/>, ${3:document.querySelector('#${2:app}')})
-```
-
-#### rrm → React.render() module
-
-```javascript
-var React = require('react')
-var ${1} = require('${2:./}${1}')
-
-React.render(<${1}${3}/>, ${5:document.querySelector('#${4:app}')})
 ```
 
 #### scu → shouldComponentUpdate() { ... }

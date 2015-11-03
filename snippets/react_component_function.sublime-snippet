@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+var ${1} = ({${2}}) => <${4:div}${3: className="${1}"}>
+	${5}
+</${4:div}>
+]]></content>
+    <tabTrigger>rcf</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: component function</description>
+</snippet>
