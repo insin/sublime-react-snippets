@@ -4,5 +4,5 @@ let {${1}} = this.state
 ]]></content>
     <tabTrigger>ds</tabTrigger>
     <scope>source.js</scope>
-    <description>React: var {...} = this.state</description>
+    <description>React: let {...} = this.state</description>
 </snippet>
