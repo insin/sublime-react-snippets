@@ -7,10 +7,13 @@
     "react",
     "snippets"
   ],
+  "scripts": {
+    "build": "node build-docs.js"
+  },
   "author": "Jonny Buchanan",
   "license": "MIT",
   "devDependencies": {
-    "glob": "^5.0.15",
+    "glob": "^6.0.1",
     "trim": "0.0.1",
     "xml2js": "^0.4.15"
   }

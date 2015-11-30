@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-var {${1}} = this.state
+let {${1}} = this.state
 ]]></content>
     <tabTrigger>ds</tabTrigger>
     <scope>source.js</scope>

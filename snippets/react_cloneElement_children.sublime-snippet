@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+React.cloneElement(this.props.children, {${1}})
+]]></content>
+    <tabTrigger>rcec</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: React.cloneElement(children, {...})</description>
+</snippet>

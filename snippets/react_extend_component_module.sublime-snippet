@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+import React, {Component} from 'react'
+
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return <${3:div}${2: className="${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}"}>
+      ${4}
+    </${3:div}>
+  }
+})
+]]></content>
+    <tabTrigger>rem</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: extend Component module</description>
+</snippet>

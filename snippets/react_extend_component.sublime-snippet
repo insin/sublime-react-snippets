@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+class ${1} extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return <${3:div}${2: className="${1}"}>
+      ${4}
+    </${3:div}>
+  }
+})
+]]></content>
+    <tabTrigger>rec</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: extend Component</description>
+</snippet>

@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-var React = require('react')
+import React from 'react'
 
-var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
+let ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
 	render() {
 		return <${3:div}${2: className="${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}"}>
 			${4}
@@ -10,7 +10,7 @@ var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
 	}
 })
 
-module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
+export default ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
 ]]></content>
     <tabTrigger>rcm</tabTrigger>
     <scope>source.js</scope>

@@ -2,7 +2,7 @@
     <content><![CDATA[
 React.cloneElement(${1:this.props.children}, {${2}})
 ]]></content>
-    <tabTrigger>rdr</tabTrigger>
+    <tabTrigger>rce</tabTrigger>
     <scope>source.js</scope>
     <description>React: React.cloneElement(...)</description>
 </snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+import React from 'react'
+import {render} from 'react-dom'
+
+import ${1} from '${2:./}${1}'
+
+render(<${1}${3}/>, ${5:document.querySelector('#${4:app}')})
+]]></content>
+    <tabTrigger>rrm</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: React render() module</description>
+</snippet>

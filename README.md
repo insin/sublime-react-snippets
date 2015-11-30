@@ -1,10 +1,8 @@
 ## Sublime Text React Snippets
 
-Sublime Text snippets for writing [React](http://facebook.github.io/react/)
-components.
+Sublime Text snippets for writing [React](http://facebook.github.io/react/) components.
 
-These snippets (based on [sublime-react](https://github.com/reactjs/sublime-react)'s)
-use ES6 concise method definitions and only use semicolons where necessary.
+These snippets (based on [sublime-react](https://github.com/reactjs/sublime-react)'s) use ES6 concise method definitions and only use semicolons where necessary.
 
 ### Snippets
 
@@ -78,16 +76,16 @@ componentWillUnmount() {
 },
 ```
 
-#### dp → var {...} = this.props
+#### dp → let {...} = this.props
 
 ```javascript
-var {${1}} = this.props
+let {${1}} = this.props
 ```
 
 #### ds → var {...} = this.state
 
 ```javascript
-var {${1}} = this.state
+let {${1}} = this.state
 ```
 
 #### dsi → dangerouslySetInnerHTML
@@ -167,7 +165,7 @@ propTypes: {
 #### rcc → component
 
 ```javascript
-var ${1} = React.createClass({
+let ${1} = React.createClass({
   render() {
     return <${3:div}${2: className="${1}"}>
       ${4}
@@ -176,10 +174,22 @@ var ${1} = React.createClass({
 })
 ```
 
+#### rce → React.cloneElement(...)
+
+```javascript
+React.cloneElement(${1:this.props.children}, {${2}})
+```
+
+#### rcec → React.cloneElement(children, {...})
+
+```javascript
+React.cloneElement(this.props.children, {${1}})
+```
+
 #### rcf → component function
 
 ```javascript
-var ${1} = ({${2}}) => <${4:div}${3: className="${1}"}>
+let ${1} = ({${2}}) => <${4:div}${3: className="${1}"}>
   ${5}
 </${4:div}>
 ```
@@ -187,9 +197,9 @@ var ${1} = ({${2}}) => <${4:div}${3: className="${1}"}>
 #### rcm → component module
 
 ```javascript
-var React = require('react')
+import React from 'react'
 
-var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
+let ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
   render() {
     return <${3:div}${2: className="${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}"}>
       ${4}
@@ -197,7 +207,7 @@ var ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = React.createClass({
   }
 })
 
-module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
+export default ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
 ```
 
 #### rdn → findDOMNode(this.refs.)
@@ -212,21 +222,38 @@ ReactDOM.findDOMNode(this.refs.${1})
 ReactDOM.render(<${1}/>, ${3:document.querySelector('#${2:app}')})
 ```
 
-#### rdr → React.cloneElement(...)
+#### rec → extend Component
 
 ```javascript
-React.cloneElement(${1:this.props.children}, {${2}})
+class ${1} extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return <${3:div}${2: className="${1}"}>
+      ${4}
+    </${3:div}>
+  }
+})
 ```
 
-#### rdrm → ReactDOM.render() module
+#### rem → extend Component module
 
 ```javascript
-var React = require('react')
-var ReactDOM = require('react-dom')
+import React, {Component} from 'react'
 
-var ${1} = require('${2:./}${1}')
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+  constructor(props) {
+    super(props)
+  }
 
-ReactDOM.render(<${1}${3}/>, ${5:document.querySelector('${4:#app}')})
+  render() {
+    return <${3:div}${2: className="${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}"}>
+      ${4}
+    </${3:div}>
+  }
+})
 ```
 
 #### ren → render() { ... }
@@ -237,6 +264,17 @@ render() {
     ${1}
   </div>
 }
+```
+
+#### rrm → React render() module
+
+```javascript
+import React from 'react'
+import {render} from 'react-dom'
+
+import ${1} from '${2:./}${1}'
+
+render(<${1}${3}/>, ${5:document.querySelector('#${4:app}')})
 ```
 
 #### scu → shouldComponentUpdate() { ... }
